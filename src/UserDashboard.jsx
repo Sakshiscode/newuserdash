@@ -92,7 +92,7 @@ Respond directly without any preamble.
 
   try {
     // Send only rating + review
-    const response = await fetch("http://localhost:5000/api/feedback", {
+    const response = await fetch("https://backend-indol-one-34.vercel.app/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ rating, review }),
@@ -243,4 +243,5 @@ Respond directly without any preamble.
       </div>
     </div>
   );
+
 }
